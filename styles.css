@@ -1,0 +1,62 @@
+body{
+    font-weight: lighter;
+    font-size: 16px;
+    background-image: url(images/crazy.gif) ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    
+    
+
+}
+
+.logo{
+    font-style: italic;
+    font-weight: normal;
+    font-size: larger;
+    color:green;
+    font-size: 100px;
+
+}
+nav{
+    display: flex;
+    color: blueviolet;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px 20px;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+nal ul{
+    list-style: none;
+    padding: 0;
+    
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    font-size: x-large;
+    ;
+}
+.title{
+    color:red;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Gallery{
+   color: red;
+
+}
+a{
+    color: green;
+}

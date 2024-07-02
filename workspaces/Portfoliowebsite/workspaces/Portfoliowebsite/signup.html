@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBC Star EV Charger</title>
+    i
+    <script>
+        function promptForModel() {
+            var carMake = document.getElementById('carMake').value;
+            var modelPrompt = '';
+
+            switch (carMake) {
+                case '1':
+                    modelPrompt = 'Toyota: Prius, Crown, Camry';
+                    break;
+                case '2':
+                    modelPrompt = 'Honda: Camry, Accord, Civic';
+                    break;
+                case '3':
+                    modelPrompt = 'Ford: Ford Maverick, F-150, Fusion';
+                    break;
+                case '4':
+                    modelPrompt = 'Chevrolet: Chevrolet Bolt EUV, Chevrolet Malibu, Chevrolet Silverado';
+                    break;
+                case '5':
+                    modelPrompt = 'Tesla: Tesla Model 3, Tesla Model S, Tesla Model X';
+                    break;
+                default:
+                    alert('Invalid car make.');
+                    return;
+            }
+
+            var modelCar = prompt('Please enter your model (' + modelPrompt + '):');
+            if (!modelCar) {
+                alert('Invalid car model.');
+                return;
+            }
+
+            var modelYear = prompt('Please enter the year of manufacture:');
+            var colorCar = prompt('Please enter your car color:');
+            var batteryCar = prompt('Please enter your battery type (1Ac, 2Ac, 3Dc):');
+
+            document.getElementById('result').innerText = 'Yes, we have your car: ' + modelCar + ', ' + modelYear + ', ' + colorCar + ', ' + batteryCar;
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to BBC Star!</h1>
+    <p>I see that you are interested in our new app, BBC EV Charger.</p>
+    <p>Please enter your EV Car Id to continue:</p>
+    <select id="carMake">
+        <option value="1">Toyota</option>
+        <option value="2">Honda</option>
+        <option value="3">Ford</option>
+        <option value="4">Chevrolet</option>
+        <option value="5">Tesla</option>
+    </select>
+    <button onclick="promptForModel()">Submit</button>
+    <p id="result"></p>
+</body>
+</html>

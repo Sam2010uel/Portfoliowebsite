@@ -1,0 +1,21 @@
+body{
+    background-image: url(duck.gif);
+    background-size: cover;
+
+}
+h1{
+    color: blue;
+}
+h2{
+    color:blue;
+}
+p{
+    color:blue;
+    font-size: larger;
+    font-weight: 300;
+    
+    
+}
+
+
+
